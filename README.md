@@ -1,26 +1,26 @@
 # Credit-Risk-Classification
 
 # Overview
-Using machine learning, a dataset of historical lending activity from a peer-to-peer lending service company was input to create a model to train and evaluate loan risk. This information is used to determine if a borrower has good or bad credit.
+A dataset of historical lending activity from a peer-to-peer lending service company was ued to build a machine-learning model that evaluates loan risk. This information is used to determine if a borrower's creditworthiness. In order to analyze the dataset, it was split into training and testing sets. The training set was used to build the first Logistic Regression Model that would then be applied to the testing data. This evaluated balanced accuracy, precision and recall score, resulting in a determined high or low-risk assessment. The original training data was resampled with the RandomOverSampler to get rid of imbalances and to build the second Logistic Regression Model.  
 
 # Results
 **Logistic Regression Model 1:**
 
--Balanced Accuracy: 94%
+-Balanced Accuracy: 94% 
 
--Precision: avg of 93% (high-risk=87%, low-risk=100%) 
+-Precision: avg of 93% (high-risk=87%, low-risk=100%) of predicted positives were correct
 
--Recall scores: avg of 95% (high-risk=89%, low-risk=100%)
+-Recall scores: avg of 95% (high-risk=89%, low-risk=100%) in measuring true positive values out of all positive predictions made
 
 
 **Logistic Regression Model 2:**
 
--Balanced Accuracy: 100%
+-Balanced Accuracy: 100% 
 
--Precision: avg of 93% (high-risk=87%, low-risk=100%)
+-Precision: avg of 93% (high-risk=87%, low-risk=100%) of predicted positives were correct
 
--Recall scores: 100%
+-Recall scores: 100% in measuring true positive values out of all positive predictions made
 
 # Result Summary
 
-Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning. (10 points)
+Based on the results of two Logistic Regression Models, I would reccomend Model 2 because it had fewer false predictions of the testing data along with 100% accuracy and recall, making it the better of the two. Although both models only had 87% precision in predicting high-risk loans (with 100% precision with low-risk), Model 1's recall and accuracy percentages were  lower making it less reliable. 
